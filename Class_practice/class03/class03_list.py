@@ -34,10 +34,10 @@ print(names)
 # 删除
 # 通过下标删除
 del names[0]
-print(names)
+print("通过下标删除后："+str(names))
 # 通过元素值删除（从左到右，删除第一个值）
 names.remove('173')
-print(names)
+print("删除第一次"+str(names))
 
 # 列表的拼接
 # 字符串你可以看作是一个字符列表
@@ -70,6 +70,7 @@ start和end不写的情况
 当step为正数：start不填代表从0开始，end不填代表到末尾
 当step为负数：start不填代表len(my_l)-1，end不填代表下标的起始位置
 """
+print("------截取------")
 print(my_l[:3])
 print(my_l[3:])
 
@@ -85,7 +86,7 @@ print(a[::-1])
 分析：实现这个功能，我只能一个个取修改列表里面所有的元素
 ['ok1', '177', '173', '奇幻', '173', 'RoseMary']
 """
-
+print("----------stu = ['ok1', '177', '173', '奇幻', '173', 'RoseMary']----------")
 stu = ['ok1', '177', '173', '奇幻', '173', 'RoseMary']
 print(len(stu))
 # 这就叫列表的遍历（下标遍历：你可以同时读取值，修改值）
@@ -94,7 +95,7 @@ for i in range(0,len(stu)):
 
 print(stu)
 
-# 成员遍历（只能读取值）
+# 成员遍历（只能读取值,不能修改）
 for s in stu:
     s += 'aaa'
 
