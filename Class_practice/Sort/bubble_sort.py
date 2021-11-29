@@ -7,6 +7,10 @@
 from Class_practice.Sort import SrtingToList
 import time
 
+from Class_practice.class06.demo03_装饰器应用 import timer
+
+@timer
+
 def bubble_sort(ss):
     """
     冒泡排序的思路：

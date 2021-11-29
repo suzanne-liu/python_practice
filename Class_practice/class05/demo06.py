@@ -7,9 +7,11 @@
 """
 import time
 
+from Class_practice.class06.demo03_装饰器应用 import timer
+
 height = [166, 167, 155, 180, 177, 160, 178, 169, 155, 172] * 300
 
-
+@timer()
 def quick_sort(height, left=0, right=len(height) - 1):
     """
     快速排序
